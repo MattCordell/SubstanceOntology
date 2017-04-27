@@ -41,6 +41,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#isModificationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#isModificationOf"/>
+    
+
+
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#method -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#method">
@@ -270,6 +276,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Dairy_food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Dairy_food">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#isModificationOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Milk"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Elapid_venom -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Elapid_venom">
@@ -293,6 +317,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Family_Elapidae">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Kingdom_Animalia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Foods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Foods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
     </owl:Class>
     
 
@@ -414,6 +446,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Milk">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Class_Mammalia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#isModificationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Milk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -448,6 +492,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Protein">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Organism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -559,6 +609,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Venom">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Organism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
