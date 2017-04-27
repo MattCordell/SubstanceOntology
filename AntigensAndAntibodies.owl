@@ -517,21 +517,11 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antibody"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasTargetAntigen"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
-                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_species"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_species"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -546,21 +536,11 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antibody"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasTargetAntigen"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
-                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_species"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_species"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
