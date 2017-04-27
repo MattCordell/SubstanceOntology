@@ -64,7 +64,18 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Anti_bacterial_antibody -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Anti_bacterial_antibody">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antibody"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasTargetAntigen"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bacterial_antigen"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -72,7 +83,17 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Anti_viral_antibody -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Anti_viral_antibody">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasTargetAntigen"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Viral_antigen"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -80,7 +101,15 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antibody -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antibody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Immunologic_substance"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Protein"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasTargetAntigen"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -106,7 +135,17 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antimicrobial_antibody -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antimicrobial_antibody">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasTargetAntigen"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Microbial_antigen"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -122,7 +161,18 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bacterial_antigen -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bacterial_antigen">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bacteria"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -146,7 +196,18 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bee_venom -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bee_venom">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Venom"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bee"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -154,7 +215,17 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Biological_substance -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Biological_substance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Organism"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -202,7 +273,18 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Elapid_venom -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Elapid_venom">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Venom"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Family_Elapidae"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -239,18 +321,21 @@
     
 
 
-    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Hepatitis_antibody -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Hepatitis_antibody">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Hymenoptera_venom -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Hymenoptera_venom">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Venom"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Order_Hymenoptera"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -266,7 +351,18 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Insect_venom -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Insect_venom">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Venom"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Class_Insecta"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -290,7 +386,18 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Microbial_antigen -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Microbial_antigen">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Microorganism"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -416,14 +523,18 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Viral_antigen -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Viral_antigen">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Virus"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Virus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -447,14 +558,18 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Wasp_venom -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Wasp_venom">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Venom"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Wasp"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Venom"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Wasp"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -470,8 +585,18 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Cow&apos;s_milk -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Cow&apos;s_milk">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Milk"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Milk"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bos_taurus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -479,7 +604,18 @@
     <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Goat&apos;s_milk -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Goat&apos;s_milk">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Milk"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Capra_hircus"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
 </rdf:RDF>
 
