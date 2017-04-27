@@ -1,0 +1,4 @@
+28482008|Bee (organism)|
+https://ontoserver.csiro.au/shrimp/?concept=28482008&versionId=http%3A%2F%2Fsnomed.info%2Fsct%2F32506021000036107%2Fversion%2F20170331
+The synonyms appear strange - Family: Apidae
+https://en.wikipedia.org/wiki/Apoidea & https://en.wikipedia.org/wiki/Bee indicates that "bees" might be more/less

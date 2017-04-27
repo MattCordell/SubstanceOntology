@@ -1,0 +1,489 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#"
+     xml:base="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Organism"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasTargetAntigen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasTargetAntigen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antibody"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#method -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#method">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Procedure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Qualifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Anti_bacterial_antibody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Anti_bacterial_antibody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Anti_viral_antibody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Anti_viral_antibody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antibody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antibody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Immunologic_substance"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Protein"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen_assay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen_assay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Procedure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antimicrobial_antibody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antimicrobial_antibody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bacteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bacteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Microorganism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bacterial_antigen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bacterial_antigen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bacterial_antigen_assay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bacterial_antigen_assay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Procedure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Order_Hymenoptera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bee_venom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bee_venom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Biological_substance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Biological_substance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bos_taurus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bos_taurus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Class_Mammalia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Brown_snake_antivenom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Brown_snake_antivenom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Capra_hircus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Capra_hircus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Class_Mammalia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Class_Insecta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Class_Insecta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Organism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Class_Mammalia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Class_Mammalia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Kingdom_Animalia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Elapid_venom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Elapid_venom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Family_Elapidae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Family_Elapidae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Kingdom_Animalia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Genus_Felis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Genus_Felis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Class_Mammalia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Genus_Pseudonaja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Genus_Pseudonaja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Family_Elapidae"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Hepatitis_B_virus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Hepatitis_B_virus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Hepatitis_antibody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Hepatitis_antibody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Hymenoptera_venom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Hymenoptera_venom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Immunologic_substance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Immunologic_substance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Insect_venom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Insect_venom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#King_brown_snake_antivenom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#King_brown_snake_antivenom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Kingdom_Animalia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Kingdom_Animalia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Organism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Microbial_antigen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Microbial_antigen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Microorganism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Microorganism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Organism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Milk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Milk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Order_Hymenoptera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Order_Hymenoptera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Class_Insecta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Organism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Organism"/>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Procedure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Procedure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Protein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Protein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Pseudechis_australis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Pseudechis_australis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Family_Elapidae"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Qualifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Qualifier"/>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_Typhi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_Typhi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_species"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_species -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_species">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Bacteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_species_antibody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_species_antibody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_typhi_inactivated_antigen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_typhi_inactivated_antigen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_typhi_live_antigen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Salmonella_typhi_live_antigen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Venom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Venom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Viral_antigen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Viral_antigen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Antigen"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Virus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Virus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Virus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Microorganism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Wasp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Wasp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Order_Hymenoptera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Wasp_venom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Wasp_venom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Venom"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#hasBiologicalOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Wasp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#measurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#measurement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Qualifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Cow&apos;s_milk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Cow&apos;s_milk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Milk"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Goat&apos;s_milk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Goat&apos;s_milk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/matthewcordell/ontologies/2017/3/AgAb#Substance"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
